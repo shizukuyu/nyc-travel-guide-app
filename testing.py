@@ -4,7 +4,7 @@ import requests
 def get_google_attractions():
     url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     details_url = "https://maps.googleapis.com/maps/api/place/details/json"
-    api_key = "AIzaSyBRYIfKjAvimx8V1gihtKnCaMRKPDOCm1w"
+    api_key = "yourapikey"
     params = {
         "query": "tourist attractions in Manhattan, New York",
         "key": api_key,
