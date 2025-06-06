@@ -1,5 +1,5 @@
 # NYC Travel Guide App - Buzzin New York
-## Traffic Prediction based on NYC Taxi Data using Machine Learning
+Traffic Prediction based on NYC Taxi Data using Machine Learning
 
 ## Overview
 🗽 A data-driven analysis of busyness levels across New York City using location-based data.
