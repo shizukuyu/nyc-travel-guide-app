@@ -1,0 +1,160 @@
+
+#info01 {
+  font-size: 14px;
+  width: 330px;
+  margin-top: 120px;
+  max-width: calc(100% - 20px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  opacity: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  #info01 {
+    margin-top: 20px; /* 调整合适的值 */
+    max-width: 90%; /* 调整合适的值 */
+  }
+}
+
+
+
+.fixed-box {
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 2px;
+  max-width: 330px;
+  z-index: 1;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 340px) {
+  .fixed-box {
+    width: 30%; 
+    right: 5px;
+  }
+}
+
+
+
+.attraction-name,
+.restaurant-name,
+.hotel-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.attraction-photo,
+.restaurant-photo,
+.hotel-photo {
+  width: 200px; 
+  height: 150px; 
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+
+.button-container {
+  margin-top: 10px;
+}
+.suggestion {
+    cursor: pointer;
+    padding: 8px;
+    list-style-type: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}  
+  .suggestion-hover {
+    background-color: #e3f2fd;
+  }
+
+.attraction-item,
+.restaurant-item,
+.hotel-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.label-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+input[type="text" i] {
+  height: 27px !important;
+  width: 190px !important;
+}
+
+.react-autosuggest__suggestions-list{
+  list-style-type: none !important;
+}
+
+@media (max-width: 600px) {
+  div[style*='height: 70vh'] {
+    height: 40vh; /* Adjust the height as needed */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  div[style*='height: 70vh'] {
+    height: 50vh; /* Adjust the height as needed */
+  }
+}
+/* Keep the original styling for #info01 and .fixed-box */
+
+
+
+/* Add media queries for different screen sizes */
+@media (max-width: 600px) {
+  .map-container {
+    height: calc(50vh - 120px); /* Adjust the 120px based on your design */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .map-container {
+    height: calc(60vh - 120px); /* Adjust the 120px based on your design */
+  }
+}
+.map-container {
+  flex: 3;
+  height: 100%;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 1024px) {
+  .fixed-box {
+    transform: scale(0.8); /* 调整缩放比例 */
+  }
+
+  .map-container {
+    flex: 4;
+  }
+}
+/* Hide the div on mobile devices */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .hidebutton{
+    display: none;
+  }
+}
